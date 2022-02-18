@@ -23,8 +23,24 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-bcg);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Убирает декор списков и линков */
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .link {
@@ -35,9 +51,25 @@ body {
   color: var(--accent-color);
 }
 
-/* Шапка */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+/* Шапка */
+header .container {
+  display: flex;
+}
+
+.header {
+}
 .header-nav {
+  display: flex;
+  align-items: center;
+
   color: var(--main-text-dark-color);
 }
 .header-logo-link,
@@ -48,14 +80,30 @@ body {
 
   color: #000000;
 }
+
+.header-logo-link {
+  margin-right: 93px;
+}
+
 .header-logo {
   color: var(--accent-color);
 }
 
 .nav-list,
 .header-address-list {
+  display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+.nav-list-item:not(:last-child),
+.header-item-mail {
+  margin-right: 50px;
+}
+.nav-list-item,
+.header-item-mail,
+.header-item-phone {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link {
@@ -64,6 +112,10 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+}
+
+.header-address-list {
+  margin-left: auto;
 }
 
 .address-link {
@@ -76,14 +128,20 @@ body {
 
 /* Hero !!   добавлен фон что бы было видно текст*/
 .hero {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  padding-top: auto;
+  padding-bottom: auto;
+  text-align: center;
   background-color: var(--footer-bgc);
 }
 
 .hero-title {
+  display: flex;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -91,10 +149,15 @@ body {
 }
 
 .hero-button {
+  align-items: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
-  align-items: center;
+
+  margin-top: 30px;
+  padding: 10px 32px;
+
+  border-radius: 4px;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -120,16 +183,50 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.features {
+}
+
+.features-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-list-item {
+  min-width: 270px;
+  min-height: 101px;
   line-height: 1.7;
 }
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .features-title {
+  margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--main-text-dark-color);
 }
 
+/* Work */
+
+.work {
+}
+.work-list {
+  display: flex;
+}
+.work-list-item {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-pic {
+  display: block;
+}
+
 /*  Чем занимаются + команда */
+
 .team {
   background-color: var(--secondary-bgc);
 }
@@ -141,27 +238,73 @@ body {
 
   color: var(--main-text-dark-color);
 }
+.team .title {
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.team-profile {
+  min-width: 270px;
+  min-height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-bcg);
+}
+.team-profile:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-photo {
+  display: block;
+}
 
 .team-name {
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
   color: var(--main-text-dark-color);
 }
 .team-position {
+  margin-top: 10px;
   text-align: center;
 }
 
 /* Футер */
+
 .footer {
   background-color: var(--footer-bgc);
 }
+
+.footer .container {
+  min-height: 252px;
+}
+
 .footer-logo-link {
+  display: inline-block;
+  margin-top: 60px;
   color: var(--secondary-text-color);
 }
 .footer-logo {
   color: var(--accent-color);
 }
+
+.footer-address {
+  margin-top: 20px;
+  min-width: 231px;
+  min-height: 81px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-address-list {
   font-style: normal;
   line-height: 1.7;

@@ -4,48 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio/Portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Шапка страницы -->
     <header class="header">
-      <nav class="header-nav">
-        <a class="header-logo-link link" href="./index.html"
-          ><span class="header-logo">Web</span>Studio</a
-        >
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a class="nav-link link" href="./index.html">Студия</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-link link current" href="./portfolio.html"
-              >Портфолио</a
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-logo-link link" href="./index.html"
+            ><span class="header-logo">Web</span>Studio</a
+          >
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a class="nav-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link link current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-address-list list">
+          <li class="header-item-mail">
+            <a class="address-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="nav-list-item">
-            <a class="nav-link link" href="">Контакты</a>
+          <li class="header-item-phone">
+            <a class="address-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header-address-list list">
-        <li class="header-item-mail">
-          <a class="address-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-item-phone">
-          <a class="address-link link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Основная часть -->
     <main>
@@ -191,32 +200,34 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <a class="footer-logo-link link" href="./index.html"
-        ><span class="footer-logo">Web</span>Studio</a
-      >
-      <address class="footer-address">
-        <ul class="footer-address-list list">
-          <li class="footer-item">
-            <a
-              class="footer-address-link link"
-              href="https://goo.gl/maps/t5yJXCLs88y3g8ho9"
-              target="_blank"
-              rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="footer-item">
-            <a class="footer-address-mail link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="footer-item">
-            <a class="footer-address-phone link" href="+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="footer-logo-link link" href="./index.html"
+          ><span class="footer-logo">Web</span>Studio</a
+        >
+        <address class="footer-address">
+          <ul class="footer-address-list list">
+            <li class="footer-item">
+              <a
+                class="footer-address-link link"
+                href="https://goo.gl/maps/t5yJXCLs88y3g8ho9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-address-mail link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-address-phone link" href="+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
