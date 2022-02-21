@@ -75,7 +75,7 @@ header .container {
 }
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-nav {
   display: flex;
@@ -253,7 +253,7 @@ header .container {
 
 .team-list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .team-profile {
